@@ -87,7 +87,7 @@ async def verify(ctx):
     elif checkifverifydone(ctx.author.id) == 'error':
         await ctx.send(f'Error verifying. Please contact a moderator.', delete_after=3)
     else:
-        await ctx.send(f'Your not verified. Please contact a administrator.', delete_after=3)
+        await ctx.send(f'You are not verified. Please contact an administrator.', delete_after=3)
 
 
 @bot.command()
@@ -129,8 +129,8 @@ def start():
 
 def setup():
     cls()
-    print("Welcome to the bot setup be sure to setup first teh flask server")
-    print("If you have not setup the flask server yet, please do so now.")
+    print("Welcome to the bot setup be sure to setup first the flask server")
+    print("If you have not setup the flask server yet, please do it now.")
     print("")
     print("If you have setup the flask server, please enter the following information.")
     print("")
